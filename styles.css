@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* rootmargin: 100px */
+:root {
+    --main-color: #f0d43a;
+    --headers-color: #e7e8e8;
+    --paragraphs-color: #e8e8e8;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open-sans', sans-serif;
+    height: 100vh;
+}
+
+/* NAVBAR STYLES AND HERO SECTION*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #121212; */
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu>li {
+    list-style-type: none;
+}
+
+.menu>li>a {
+    margin: 15px;
+    text-decoration: none;
+    color: var(--headers-color);
+
+}
+
+.logo-text {
+    padding: 20px 15px 15px;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Nothing You Could Do', sans-serif;
+    color: var(--main-color);
+}
+
+.section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: var(--headers-color);
+}
+
+.see-menu-btn, .main-btn {
+    text-transform: uppercase;
+    margin: 45px 0 0;
+    padding: 15px 50px;
+    border-top: solid 1px var(--main-color);
+    border-bottom: solid 1px var(--main-color);
+    border-left: none;
+    border-right: none;
+    color: var(--paragraphs-color);
+    background-color: transparent;
+}
+
+.see-menu-btn:hover{
+    background-color: var(--main-color);
+    color: black;
+    transition: all 0.5s;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* THIS creates the animation! */
+    transition: all 1s;
+}
+
+.slide > img {
+    /* Only for images that have different size than slide */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.lines {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.lines-line {
+    border: none;
+    background-color: #fff;
+    opacity: 0.7;
+    height: 1.2rem;
+    width: 2px;
+    margin-right: 0.9rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.lines-line:last-child {
+    margin: 0;
+}
+
+.lines-line-active {
+    background-color: var(--main-color);
+    transform: scale(1.4);
+}
+
+/* ABOUT SECTION STYLES */
+.about-section-container {
+    background-image: url(./assets/imgs/about-background.jpg);
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.title-separator {
+    width: 200px;
+    border: 1px solid #6c6c6c;
+    opacity: 0.4;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 550px) {
+    .logo-heading {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .menu {
+        visibility: hidden;
+    }
+    .see-menu-btn {
+        margin: 25px 0;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .logo-heading {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .menu {
+        visibility: hidden;
+    }
+}
