@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Koffie - Lovers only</title>
+    <title>Koffie - Coffee Lovers only</title>
 </head>
 <body>
     <nav class="navbar">
@@ -12,18 +12,18 @@
             <h2 class="logo-text">Koffie</h2>
         </div>
         <ul class="menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">REVIEWS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#reviews">REVIEWS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <main>
         <!-- HERO SECTION -->
-        <div class="hero">
+        <div class="hero" id="home">
             <div class="section-container">
                 <div class="section-content">
                     <img src="./assets/imgs/logo.png" alt="Koffie, inc">
@@ -40,16 +40,130 @@
         </div>
         <!-- END OF HERO SECTION -->
         <!-- ABOUT SECTION -->
-        <div class="about-section-container">
+        <div class="about-section-container active" id="about">
             <div class="about-section-content">
-                <h2 class="about-section-heading">our story</h2>
+                <h2 class="about-heading section-headings">our story</h2>
                 <div class="title-separator"></div>
                 <p class="about-section-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque unde doloribus iste pariatur vitae debitis impedit dicta commodi. Sunt eum quis aliquam porro exercitationem ab vero veritatis dolor impedit enim.</p>
                 <button class="main-btn see-full-story">see full story</button>
             </div>
         </div>
         <!-- END OF ABOUT SECTION -->
-
+        <!-- OUR OFFER SECTION -->
+        <div class="our-offer-section-container" id="about-2">
+            <div class="our-offer-section-content">
+                <h2 class="our-offer-heading section-headings">our offer</h2>
+                <div class="title-separator"></div>
+                <div class="offer-tool-grid">
+                    <div class="offer-tool" id="offer-1">
+                        <img src="./assets/imgs/offer-1.png" alt="">
+                        <h3 class="offer-tool-heading">Original Coffee</h3>
+                        <p class="offer-tool-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum facilis vel debitis eius suscipit. Eligendi possimus neque nam.</p>
+                    </div>
+                    <div class="offer-tool"  id="offer-2">
+                        <img src="./assets/imgs/offer-2.png" alt="">
+                        <h3 class="offer-tool-heading">20 Coffee Flavors</h3>
+                        <p class="offer-tool-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum facilis vel debitis eius suscipit. Eligendi possimus neque nam.</p>
+                    </div>
+                    <div class="offer-tool"  id="offer-3">
+                        <img src="./assets/imgs/offer-3.png" alt="">
+                        <h3 class="offer-tool-heading">Pleasant Ambient</h3>
+                        <p class="offer-tool-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum facilis vel debitis eius suscipit. Eligendi possimus neque nam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF OUR OFFER SECTION -->
+        <!-- MENU SECTION -->
+        <div class="menu-section-container" id="menu">
+            <div class="menu-section-content">
+                <h2 class="menu-heading section-headings">special menu</h2>
+                <div class="title-separator"></div>
+                <div class="menu-grid">
+                    <div class="item-card" id="card-1">
+                        <img src="./assets/imgs/item.jpg" alt="coffe-cup">
+                        <div class="item-content">
+                            <h3 class="item-heading">Cappucino</h3>
+                            <span class="item-price">$2.2</span>
+                            <p class="item-description">Lorem Ipsum is simply dummy of the printing</p>
+                        </div>
+                    </div>
+                    <div class="item-card" id="card-2">
+                        <img src="./assets/imgs/item.jpg" alt="coffe-cup">
+                        <div class="item-content">
+                            <h3 class="item-heading">Caffe Breve</h3>
+                            <span class="item-price">$2.2</span>
+                            <p class="item-description">Lorem Ipsum is simply dummy of the printing</p>
+                        </div>
+                    </div>
+                    <div class="item-card" id="card-3">
+                        <img src="./assets/imgs/item.jpg" alt="coffe-cup">
+                        <div class="item-content">
+                            <h3 class="item-heading">Caffe Latte</h3>
+                            <span class="item-price">$2.2</span>
+                            <p class="item-description">Lorem Ipsum is simply dummy of the printing</p>
+                        </div>
+                    </div>
+                    <div class="item-card" id="card-4">
+                        <img src="./assets/imgs/item.jpg" alt="coffe-cup">
+                        <div class="item-content">
+                            <h3 class="item-heading">Flat White</h3>
+                            <span class="item-price">$2.2</span>
+                            <p class="item-description">Lorem Ipsum is simply dummy of the printing</p>
+                        </div>
+                    </div>
+                    <div class="item-card" id="card-5">
+                        <img src="./assets/imgs/item.jpg" alt="coffe-cup">
+                        <div class="item-content">
+                            <h3 class="item-heading">Macchiato</h3>
+                            <span class="item-price">$2.2</span>
+                            <p class="item-description">Lorem Ipsum is simply dummy of the printing</p>
+                        </div>
+                    </div>
+                    <div class="item-card" id="card-6">
+                        <img src="./assets/imgs/item.jpg" alt="coffe-cup">
+                        <div class="item-content">
+                            <h3 class="item-heading">Amecicano</h3>
+                            <span class="item-price">$2.2</span>
+                            <p class="item-description">Lorem Ipsum is simply dummy of the printing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF MENU SECTION -->
+        <!-- GALLERY SECTION  -->
+        <div class="gallery-section-container">
+            <div class="gallery-section-content">
+                <h2 class="menu-heading section-headings">we love taking pic's</h2>
+                <div class="title-separator"></div>
+                <div class="gallery-grid">
+                    <div class="gallery" id="gallery-1">
+                        <a class="overlay" href="./assets/imgs/gallery-1.jpg">
+                        <img src="./assets/imgs/gallery-1.jpg" alt="black-mug">
+                        <span class="icon-focus item-icon"></span></a>
+                    </div>
+                    <div class="gallery" id="gallery-2">
+                        <img src="./assets/imgs/gallery-2.jpg" alt="">
+                    </div>
+                    <div class="gallery" id="gallery-3">
+                        <img src="./assets/imgs/gallery-3.jpg" alt="">
+                    </div>
+                    <div class="gallery" id="gallery-4">
+                        <img src="./assets/imgs/gallery-4.jpg" alt="">
+                    </div>
+                    <div class="gallery" id="gallery-5">
+                        <img src="./assets/imgs/gallery-5.jpg" alt="">
+                    </div>
+                    <div class="gallery" id="gallery-6">
+                        <img src="./assets/imgs/gallery-6.jpg" alt="">
+                    </div>
+                </div>
+                <button class="main-btn load-more-btn">load more</button>
+            </div>
+        </div>
+        <!--END OF GALLERY SECTION -->
+        
     </main>
     <script src="script.js"></script>
 </body>
